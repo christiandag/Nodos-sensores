@@ -4,14 +4,16 @@ Nodo 1: gateway
 - Comunicación Ethernet con la Red WIFi Doméstica
 - Red distribuida WIFi Adhoc
 - Cliente http
-- Servidor http
+- Servidor http <br>
+  192.168.4.1 <br>
 - Almacenamiento de estados de cada nodo
 - Sincronización con la App Android
 
 Nodo 2: 
 - Red distribuida WiFi Adhoc
 - Cliente http
-- Servidor http
+- Servidor http <br>
+  192.168.4.12 <br>
 - Lectura sensor DTH11
 - Control de temperatura PID
 - Display LCD
@@ -21,17 +23,15 @@ Nodo 3:
 - Cliente http <br>
   Envía mensajes hacia el nodo gateway para actualizar el estado de sensores y actuadores.
 - Servidor http <br>
+  192.168.4.10 <br>
   Mensajes recibidos desde el nodo gateway para configurar el arduino según requiera el cliente (la app): 
   - "a": pasa el arduino a modo automático (encendido y apagado de las lámparas según la medición de la fotoresistencia)
   - "b": pasa el arduino a modo manual (se controla la intensidad de las luces mediante la app, mediante los siguientes mensajes:
-    - "ba": intensidad a 25% lámpara 1
-    - "bb": intensiadad a 50% lámpara 1
-    - "bc": intensiadad a 75% lámpara 1
-    - "bd": intensiadad a 100% lámpara 1
-    - "be": intensidad a 25% lámpara 2
-    - "bf": intensiadad a 50% lámpara 2
-    - "bg": intensiadad a 75% lámpara 2
-    - "bh": intensiadad a 100% lámpara 2
+    - "1": intensidad a 0% lámpara 1
+    - "2": intensiadad a 25% lámpara 1
+    - "3": intensiadad a 50% lámpara 1
+    - "4": intensiadad a 100% lámpara 1
+    - "5": intensiadad a 100% lámpara 1
   - "c": estado abierto del servo 1
   - "d": estado cerrado del servo 1
   - "e": estado abierto del servo 2
@@ -52,5 +52,14 @@ Nodo 4:
 - Red distribuida  WIFi Adhoc
 - Cliente http
 - Servidor http
+  192.168.4.11 <br>
+  Mensajes recibidos desde el nodo gateway para configurar el arduino según requiera el cliente (la app): 
+  - "a": pasa el arduino a modo automático (encendido y apagado de las lámparas según la medición de la fotoresistencia)
+  - "b": pasa el arduino a modo manual (se controla la intensidad de las luces mediante la app, mediante los siguientes mensajes:
+    - "1": intensidad a 0% lámpara 1
+    - "2": intensiadad a 25% lámpara 1
+    - "3": intensiadad a 50% lámpara 1
+    - "4": intensiadad a 100% lámpara 1
+    - "5": intensiadad a 100% lámpara 1
 - Fotoresistencia
 - Control de lámpara LED luminosidad variable
