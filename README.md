@@ -14,7 +14,13 @@ Nodo 2:
 - Cliente http
 - Servidor http <br>
   192.168.4.12 <br>
-- Lectura sensor DTH11
+  Mensajes recibidos desde el nodo gateway para configurar el arduino según requiera el cliente (la app): 
+  - "a": pasa el arduino a modo automático (encendido y apagado de las lámparas según la medición de la fotoresistencia)
+  - "b": pasa el arduino a modo manual (se controla la intensidad de las luces mediante la app, mediante los siguientes mensajes:
+    - "1": enciende el ventilador
+    - "2": apaga el ventilador
+- Lectura sensor DTH11 <br>
+  Envia temperatura al módulo Gateway cada 30 segundos.
 - Control de temperatura PID
 - Display LCD
 
