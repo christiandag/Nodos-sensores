@@ -38,6 +38,7 @@ Nodo 3:
   - "f": estado cerrado del servo 2
   - "g": estado abierto del servo 3
   - "h": estado cerrado del servo 3
+  - "i": devuelve valor del sensor de temperatura (por Serial
 - Sensor: Fotoresistencia <br>
   El Arduino debe evaluar si existe luz en el ambiente y según esto encender o apagar automáticamente las luces.
 - Actuadores: 3 servomotores <br>
@@ -61,5 +62,6 @@ Nodo 4:
     - "3": intensiadad a 50% lámpara 1
     - "4": intensiadad a 100% lámpara 1
     - "5": intensiadad a 100% lámpara 1
+  - "i": devuelve valor del sensor de temperatura (por Serial)
 - Fotoresistencia
 - Control de lámpara LED luminosidad variable
